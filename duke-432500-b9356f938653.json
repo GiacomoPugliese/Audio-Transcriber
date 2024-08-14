@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "duke-432500",
+  "private_key_id": "b9356f938653c80bee3885a0f645e6483433e4f0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCxyhdcDWQL3CDB\nmzhay4F0yLEGHg90zyl3tuP40d2fA+Q7Bejp8LxFTz02vXVBJsQW/UjP76jN5pEZ\nX8MP7pWLGMN1TlyWODr3olZxEy/4aXmf3a5gRWmh95h50/oLHNrq9qyGhR+5a1Nj\nBecfj77mPScb//xj/51qtjWoqA5db1Oqsq9JhvIl3LBYbCE6vf+qZJ09CscapQW4\nPuRd9dnC2YDA2ZfDGess5Hnov7Hi/lLZAKsckaoqjo9QiYWNciHx7C0GoB2lZaCk\nB7qxsqZH8/tgF+wGNe2Cdf2jRXZRQXaAtGeGXsYda9FvkWe5JQThNHq/vwCcm+6d\nHKsLygZpAgMBAAECgf9AUgMY8OFnehWj9YhHcvqz403jytGiBi5+rdr20EuU++A8\nekkA4k6yKuvlKnsjX4Deev+coSSf4b2lY52hmSJ4ic4KwFMcn1TYKJp7NIszHG0b\nfnoCUcUdCzZvqauVDNcmmVNAV4tJDeSycsFRg2czddK0n59na/1yGZMldYU0YWsc\nJA9tUAttp/h+PRsoK5kEnlHVpqQbjKNJxEeaBYTYp1qQDusEaDy+agqyFCTOQrfL\nOJF/YwxXZ95qSrsWfNrcPn995bGZ5lEoIuHFbY4LlPP2mlJLoHSucv8ZVxlW4kZN\nJQM06Wdp/w9K/2Vz71y4041CLqTFEW7FGmm1AR0CgYEA24Gdt8aE0qz6yQG4tVGW\nYZpKQI09ch3fyCjKJcU9KoBUJltDg9reext8YC77IUT99lNh4KFQthBvqcH2t+AR\nypgzmejhKZsDZAGrUyBfI3bmDDeH3E1qRuJdJEOKfSE4wqT26LJdHaEOpNoM8qN/\nTi1dmlJjJBG12pyfPXKm4bUCgYEAz1j3kNKkf7utza5L3OG2ADhSXmIHQsRRTMBS\nVBUlzxbsi5kaZGjgZRnhBdfW+bIHY/kBV8RNlnWlngwr2je2pYiHWdiz+6VruQAC\nGK25EKRb7qpGNd79oaCXC1zdZE5ZGT+zagxH1h0vxwie+eWyM9mZxVW5X6WKKmDD\n3hFrUmUCgYBATd1lXAvHKBOj1RRGUetrFmcQOBA7IRNQsNpfbEO58rQ0NGI3+2NX\nzzqFdt3s5ig8BDtVMgzR+UitA3yCa2rq3eGoAfgMVzQMFQ0aog4c9pT4GUB8wlUT\nBPdiS0MD2zqkku0eSDpNFsSSeKp4XntJ7LJSJjaS93k93MotlyvaTQKBgQCsiTWI\nFx+3Am7/xddut4sA59zymNO95SpZmXdobCiICGVRTFc/0l1XA4/RkudZ46Buuhc5\n9ykw2Di2KR6ceNvNJqyqQL6T2fSnfrA/5N8oT/wHvzypOyMGSWEmnWHEQ8W0UuNy\njUGBk8vb7PqMq2v75Uglgs28Hz23Qcn6kbgiWQKBgGT1ocdCA71h4ctXmn4tKYgn\nND5JWhVoRlLV1BdgwwwJlXBtRayv3xOaN2LLxSK/WWfs/IdsNR61PiPHxtNlt+Wp\nlzcuEr0bOiM9UzHEXe4fAjQoaO07Dam9N3yVlBfE9Hud1oQD+rurhzNlrG27tHRf\niqwl13GwvnQw6AQRyWSk\n-----END PRIVATE KEY-----\n",
+  "client_email": "audio-transciber@duke-432500.iam.gserviceaccount.com",
+  "client_id": "109913605147920312387",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/audio-transciber%40duke-432500.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
