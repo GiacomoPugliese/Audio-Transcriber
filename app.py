@@ -1,6 +1,7 @@
 import os
 from google.cloud import speech
 from google.cloud import storage
+import time 
 
 def find_mp3_file(directory: str) -> str:
     """Finds the only MP3 file in the given directory."""
@@ -33,13 +34,21 @@ def google_speech_transcribe_gcs(gcs_uri: str, language_code="en-US") -> str:
 
     operation = client.long_running_recognize(config=config, audio=audio)
     print("Waiting for operation to complete...")
-    response = operation.result(timeout=600)
+
+    minutes = 0
+    while not operation.done():
+        print(f"Operation not completed yet. Waiting for another 60 seconds (minutes elapsed: {minutes}).")
+        time.sleep(60)  # Wait for 60 seconds before polling again
+        minutes+=1
+
+    response = operation.result()
 
     transcription = ""
     for result in response.results:
         transcription += result.alternatives[0].transcript + "\n"
 
     return transcription
+
 
 # Example usage
 directory = "."  # Current directory
