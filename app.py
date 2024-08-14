@@ -1,7 +1,7 @@
 import os
 from google.cloud import speech
 from google.cloud import storage
-import time 
+import time
 
 def find_mp3_file(directory: str) -> str:
     """Finds the only MP3 file in the given directory."""
@@ -39,7 +39,7 @@ def google_speech_transcribe_gcs(gcs_uri: str, language_code="en-US") -> str:
     while not operation.done():
         print(f"Operation not completed yet. Waiting for another 60 seconds (minutes elapsed: {minutes}).")
         time.sleep(60)  # Wait for 60 seconds before polling again
-        minutes+=1
+        minutes += 1
 
     response = operation.result()
 
@@ -49,10 +49,15 @@ def google_speech_transcribe_gcs(gcs_uri: str, language_code="en-US") -> str:
 
     return transcription
 
+def save_transcription_to_file(transcription: str, output_file: str):
+    """Saves the transcription to a text file."""
+    with open(output_file, 'w', encoding='utf-8') as file:
+        file.write(transcription)
 
 # Example usage
 directory = "."  # Current directory
 bucket_name = "y1s1-lectures"  # Replace with your GCS bucket name
+output_file = "output.txt"  # Name of the output file
 
 # Find the MP3 file in the directory
 source_file_name = find_mp3_file(directory)
@@ -64,4 +69,8 @@ print(f"File uploaded to {gcs_uri}")
 
 # Transcribe the audio file
 transcription = google_speech_transcribe_gcs(gcs_uri)
-print("Transcription:", transcription)
+print("Transcription completed.")
+
+# Save the transcription to a text file
+save_transcription_to_file(transcription, output_file)
+print(f"Transcription saved to {output_file}")
